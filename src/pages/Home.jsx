@@ -7,6 +7,7 @@ import { CtaBand } from '../components/Layout.jsx'
 import { Reveal, SectionHeading, Stars, StatCounter } from '../components/Ui.jsx'
 import { coverage, highlights, site, stats, testimonials } from '../data/site.js'
 import { services } from '../data/services.js'
+import { asset } from '../lib/asset.js'
 
 function Hero() {
   return (
@@ -53,7 +54,7 @@ function Hero() {
         <div className="hero__media">
           <div className="hero__image-wrap">
             <img
-              src="/images/hero.jpg"
+              src={asset('images/hero.jpg')}
               alt="FM Express delivery van travelling along a coastal highway beneath a cargo aircraft"
               fetchPriority="high"
             />
@@ -103,7 +104,7 @@ function IntroSection() {
       <div className="container intro-grid">
         <Reveal className="intro-grid__media">
           <img
-            src="/images/warehouse.jpg"
+            src={asset('images/warehouse.jpg')}
             alt="FM Express warehouse team sorting parcels onto a conveyor belt"
             loading="lazy"
           />
@@ -221,7 +222,7 @@ function Coverage() {
 
         <Reveal delay={120} className="coverage-grid__media">
           <img
-            src="/images/freight.jpg"
+            src={asset('images/freight.jpg')}
             alt="Cargo being loaded onto a freight aircraft at dusk"
             loading="lazy"
           />

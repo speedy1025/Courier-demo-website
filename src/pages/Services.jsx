@@ -6,6 +6,7 @@ import { CtaBand, PageBanner } from '../components/Layout.jsx'
 import { Accordion, Reveal, SectionHeading } from '../components/Ui.jsx'
 import { faqs } from '../data/site.js'
 import { pricing, serviceCategories, services, steps } from '../data/services.js'
+import { asset } from '../lib/asset.js'
 
 function ServiceFilter() {
   const [active, setActive] = useState('All')
@@ -162,7 +163,7 @@ export default function Services() {
         eyebrow="Services"
         title="Delivery, freight and fulfilment — wherever it needs to go."
         text="From a same-day envelope in Warri to a container cleared at Apapa, here is everything FM Express can move for you."
-        image="/images/freight.jpg"
+        image={asset('images/freight.jpg')}
         alt="Freight pallets being loaded onto an aircraft"
       />
       <ServiceFilter />

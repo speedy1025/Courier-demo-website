@@ -3,6 +3,7 @@ import Icon from '../components/Icon.jsx'
 import { PageBanner } from '../components/Layout.jsx'
 import { Reveal, SectionHeading } from '../components/Ui.jsx'
 import { site } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 
 const EMPTY_FORM = { fullName: '', email: '', subject: '', message: '' }
 const MESSAGE_LIMIT = 800
@@ -317,7 +318,7 @@ export default function Contact() {
         eyebrow="Contact"
         title="Talk to a human about your delivery."
         text="Quotes, collections, freight enquiries or a parcel that has gone quiet — reach us however suits you."
-        image="/images/express.jpg"
+        image={asset('images/express.jpg')}
         alt="Courier handing a parcel to a customer"
       />
 

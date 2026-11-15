@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset.js'
+
 // Service catalogue. The Services page filters and .map()s over this array.
 export const serviceCategories = ['All', 'Express', 'Freight', 'Business']
 
@@ -10,7 +12,7 @@ export const services = [
     summary: 'Booked by 11:00 AM, at the door before close of business.',
     description:
       'Our riders and vans move documents, spare parts, medical samples and last-minute gifts across Warri, Effurun, Ughelli, Lagos and Abuja the same day you book. Live tracking, proof-of-delivery photo, and a two-hour pickup window you can actually plan around.',
-    image: '/images/express.jpg',
+    image: asset('images/express.jpg'),
     alt: 'Courier in uniform handing a parcel to a customer at her door',
     features: ['2-hour pickup window', 'Live rider tracking', 'Photo proof of delivery', 'Up to 30 kg per parcel'],
     price: 'From ₦2,500',
@@ -24,7 +26,7 @@ export const services = [
     summary: 'Door-to-door to 120+ countries in as little as 48 hours.',
     description:
       'Priority air consolidation into our partner hubs in London, Rotterdam, Dubai, New York and Guangzhou, then local last-mile delivery. We handle the customs paperwork, duties estimate and the awkward questions, so your customer just receives their parcel.',
-    image: '/images/hero.jpg',
+    image: asset('images/hero.jpg'),
     alt: 'Delivery van on a coastal highway with a cargo aircraft overhead',
     features: ['2–5 working day transit', 'Customs paperwork handled', 'Duties and taxes estimated up front', 'Signature or photo delivery'],
     price: 'From ₦18,900',
@@ -38,7 +40,7 @@ export const services = [
     summary: 'For cargo too big for a parcel counter but too urgent for the sea.',
     description:
       'Consolidated and dedicated air freight out of Lagos, Port Harcourt and Accra, with airport-to-door or door-to-airport options. Ideal for machinery parts, electronics, pharmaceuticals and seasonal stock that cannot wait five weeks.',
-    image: '/images/freight.jpg',
+    image: asset('images/freight.jpg'),
     alt: 'Cargo pallets being loaded into a freight aircraft at dusk',
     features: ['From 45 kg upwards', 'Airport-to-door options', 'Temperature-controlled lanes', 'Full customs brokerage'],
     price: 'Quote per kg',
@@ -52,7 +54,7 @@ export const services = [
     summary: 'Full container or shared container, cleared and delivered inland.',
     description:
       'FCL and LCL ocean freight through Lagos Apapa, Tin Can and Onne, with in-house clearing agents and inland trucking to your door. We give you a landed-cost estimate before the container leaves port, not after.',
-    image: '/images/seafreight.jpg',
+    image: asset('images/seafreight.jpg'),
     alt: 'Container ship loaded with shipping containers arriving at a port',
     features: ['20ft and 40ft containers', 'Shared LCL space', 'Licensed clearing agents', 'Inland haulage included'],
     price: 'Quote per container',
@@ -66,7 +68,7 @@ export const services = [
     summary: 'Store your stock with us; we pick, pack, ship and return.',
     description:
       'Plug your online store into our warehouse in Lagos. We store your inventory, pick and pack each order with your branding, ship it on your cheapest service, and handle returns so you never chase a courier during a sales rush.',
-    image: '/images/ecommerce.jpg',
+    image: asset('images/ecommerce.jpg'),
     alt: 'Business owner packing online orders at a desk',
     features: ['Inventory dashboard', 'Branded packaging', 'Returns management', 'Shopify & WooCommerce sync'],
     price: 'From ₦900 / order',
@@ -80,7 +82,7 @@ export const services = [
     summary: 'Secure storage plus scheduled distribution to your outlets.',
     description:
       'Racked, CCTV-monitored and insured storage for pallets or cartons, with weekly or daily distribution runs to retailers across the South-South and South-West. Monthly stock reports and a named account manager come as standard.',
-    image: '/images/warehouse.jpg',
+    image: asset('images/warehouse.jpg'),
     alt: 'Workers sorting parcels on a conveyor belt inside a warehouse',
     features: ['Pallet & carton storage', 'CCTV and 24/7 security', 'Scheduled distribution runs', 'Monthly stock reporting'],
     price: 'From ₦4,200 / pallet',

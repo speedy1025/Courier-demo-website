@@ -3,6 +3,7 @@ import Icon from '../components/Icon.jsx'
 import { CtaBand, PageBanner } from '../components/Layout.jsx'
 import { Reveal, SectionHeading } from '../components/Ui.jsx'
 import { milestones, objectives, site, stats, team, values } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 
 function PurposeCards() {
   const cards = [
@@ -86,7 +87,7 @@ function Story() {
 
         <Reveal className="story-grid__media" delay={120}>
           <img
-            src="/images/warehouse.jpg"
+            src={asset('images/warehouse.jpg')}
             alt="FM Express staff sorting parcels inside the Effurun hub"
             loading="lazy"
           />
@@ -262,7 +263,7 @@ export default function About() {
         eyebrow="About us"
         title="A Warri company with a worldwide route map."
         text="Fourteen years of moving parcels, pallets and promises — and the story of how we got here."
-        image="/images/warehouse.jpg"
+        image={asset('images/warehouse.jpg')}
         alt="FM Express warehouse team at work"
       />
 
